@@ -41,12 +41,13 @@ public class ConnectionManager {
             return null;
         }
     }
-    public static void main(String[] args){
-      ConnectionManager.getConnection();
-      ConnectionManager.getConnection();
-      ConnectionManager.getConnection();
-      ConnectionManager.getConnection();
-      ConnectionManager.getConnection();
-      ConnectionManager.getConnection();
+
+    public static void main(String[] args) {
+        ConnectionManager.getConnection();
+        ConnectionManager.getConnection();
+        ConnectionManager.getConnection();
+        ConnectionManager.getConnection();
+        ConnectionManager.getConnection();
+        ConnectionManager.getConnection();
     }
 }
