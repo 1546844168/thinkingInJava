@@ -21,7 +21,6 @@ class Zi extends Fu {
         System.out.println("zi constructed");
     }
 
-    @Override
     public void fun() {
         System.out.println("zi fun");
         super.fun();// 可以在子类中通过super调用父类的方法。
