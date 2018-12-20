@@ -6,8 +6,6 @@ package chapter.eight;
  */
 
 class G {
-
-
     public void g() {
         System.out.println("G g()");
     }
@@ -31,5 +29,9 @@ public class RTTI {
         G g = new F();
         ((F) g).f();
         g.g();
+
+        System.out.println(g.getClass());
+
+
     }
 }
