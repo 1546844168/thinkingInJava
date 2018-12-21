@@ -1,4 +1,4 @@
-package chapter.nine;
+package chapter.nine.practice;
 
 /**
  * @author 江峰
