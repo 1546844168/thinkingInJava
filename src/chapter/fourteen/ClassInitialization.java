@@ -16,15 +16,4 @@ public class ClassInitialization {
     }
 }
 
-class A {
-    public static void main(String[] args) {
 
-        System.out.println(ClassInitialization.name);
-        System.out.println(boolean.class == Boolean.TYPE);
-
-    }
-}
-
-interface GG {
-
-}

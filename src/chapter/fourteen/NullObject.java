@@ -6,6 +6,20 @@ package chapter.fourteen;
  */
 public class NullObject {
     public static void main(String[] args) {
+        try {
+            new NullObject().g();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+    }
+
+
+    public void g() throws Exception {
+        fun();
+    }
+
+    public void fun() throws Exception {
+        throw new Exception();
     }
 }
