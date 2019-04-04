@@ -29,3 +29,5 @@ public class HiddenC {
         return new C();
     }
 }
+
+
