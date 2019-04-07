@@ -1,4 +1,4 @@
-package IOAndFile;
+package ioandfile;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class MemoryInput {
     public static void main(String[] args) throws IOException {
-//        String fileName = "G:\\javaDevelopment\\ideaWorkSpace\\thinkingInJava\\src\\IOAndFile\\BufferInputFile.java";
+//        String fileName = "G:\\javaDevelopment\\ideaWorkSpace\\thinkingInJava\\src\\ioandfile\\BufferInputFile.java";
 //        StringReader sr = new StringReader(read(fileName));
     }
 }

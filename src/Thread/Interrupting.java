@@ -38,12 +38,12 @@ class IOBlocked implements Runnable {
             in.read();
         } catch (IOException e) {
             if (Thread.currentThread().isInterrupted())
-                System.out.println("IOAndFile 中断异常");
+                System.out.println("ioandfile 中断异常");
             else{
                 throw new RuntimeException();
             }
         }
-        System.out.println("IOAndFile 执行完run()");
+        System.out.println("ioandfile 执行完run()");
     }
 }
 

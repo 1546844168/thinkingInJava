@@ -1,4 +1,4 @@
-package IOAndFile;
+package ioandfile;
 
 import java.io.*;
 import java.util.Random;

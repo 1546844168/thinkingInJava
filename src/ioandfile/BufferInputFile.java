@@ -1,4 +1,4 @@
-package IOAndFile;
+package ioandfile;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -19,7 +19,7 @@ public class BufferInputFile {
         bfr.close();
     }
     public static void main(String[] args) throws IOException {
-      read("G:\\javaDevelopment\\ideaWorkSpace\\thinkingInJava\\src\\IOAndFile\\BufferInputFile.java");
+        read("G:\\javaDevelopment\\ideaWorkSpace\\thinkingInJava\\src\\ioandfile\\BufferInputFile.java");
     }
 }
 

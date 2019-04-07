@@ -1,6 +1,9 @@
-package IOAndFile;
+package ioandfile;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.util.LinkedList;
 
 /**
@@ -21,7 +24,7 @@ public class Practice7 {
     }
 
     public static void main(String[] args) throws IOException {
-        readLine("G:\\javaDevelopment\\ideaWorkSpace\\thinkingInJava\\src\\IOAndFile\\BufferInputFile.java");
+        readLine("G:\\javaDevelopment\\ideaWorkSpace\\thinkingInJava\\src\\ioandfile\\BufferInputFile.java");
         for (int i = list.size() - 1; i >= 0 ; i--) {
             System.out.println(list.get(i));
         }
