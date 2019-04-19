@@ -448,6 +448,13 @@
   		21.5.2 notify() 和 notifyAll()
   			
   
+  	15. 检查中断
+  		a. 注意，当你在线程上调用interrupted时，中断发生的唯一时刻是在任务要进入到阻塞操作中，或者已经在阻塞操作内部，IO不可中断和被阻塞的synchronized方法是不可中断的。不是很理解。见 thinkingInJava p700
+  
+  	16. Wait() 和notifyAll()
+  		a. 调用sleep()的时候并没有释放锁，调用yield()的时候也没有释放锁。调用wait()的时候，线程被挂起，锁被释放。
+  		b. Wait(),notify(),notifyAll()不是Thread类的方法，而是基类Object类中的方法。所以无论在什么地方地方都可以使用，但是非同步方法中使用会抛出异常，意思就是说：在使用执行这三个方法的任务在调用这些方法前要先获得对象的锁。
+ 		
   		不理解之处：volatile关键字
 
        
