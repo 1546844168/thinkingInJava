@@ -434,7 +434,7 @@
                 中断多个任务：Executors.shutdownNow()将会发送一个interrupted()给它启动的所有线程。
                 
                 中断单个任务：Executors.submit(Runnable task)返回一个Future<?>,Future.cancel()方法可以中断单个的线程。
-            
+            io处于阻塞状态时，可调用Executors.shutdownNow()方法解除阻塞状态，然后就可以关闭io。
              
   	15. 检查中断
   		a. 注意，当你在线程上调用interrupted时，中断发生的唯一时刻是在任务要进入到阻塞操作中，或者已经在阻塞操作内部，IO不可中断和被阻塞的synchronized方法是不可中断的。不是很理解。见 thinkingInJava p700
