@@ -5,10 +5,6 @@ package chapter.five;
  * @create 2018-12-13 17:18
  */
 public class This {
-    void hello() {
-        System.out.println("hello");
-    }
-
     int num = 0;
 
     This increment() {
@@ -24,5 +20,4 @@ public class This {
     public static void main(String[] args) {
         new This().increment().increment().print();
     }
-
 }

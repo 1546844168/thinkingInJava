@@ -9,24 +9,26 @@ import java.io.IOException;
 public class Hello {
     boolean flag = false;
     static int count = 0;
+
     void change() {
         flag = true;
     }
 
     @Override
     protected void finalize() throws Throwable {
-        if (flag)
+        if (flag) {
             System.out.println("调用了finalize方法  " + count++);
+        }
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
 //        for (int i = 0; i < 10000; i++) {
-            new Hello().change();
+        new Hello().change();
 //        }
         System.gc();
         Thread.sleep(1000);
+        System.gc();
         System.out.println("结束");
-
     }
 
 }
